@@ -1,18 +1,21 @@
 <!DOCTYPE html>
+<?php
+  $bg = array(Theyous.GitHub.IO/Imagens/BGs/0001.jpg, Theyous.GitHub.IO/Imagens/BGs/0005.jpg, 'Theyous.GitHub.IO/Imagens/BGs/0007.jpg', 'Theyous.GitHub.IO/Imagens/BGs/0010.jpg', 'Theyous.GitHub.IO/Imagens/BGs/0011.jpg', 'Theyous.GitHub.IO/Imagens/BGs/0013.jpg', 'Theyous.GitHub.IO/Imagens/BGs/0014.jpg');
+  $i = rand(0, count($bg)-1);
+  $selectedBg = "$bg[$i]";
+?>
 <html>
   <head>
     <title>
       Theyous.GitHub.IO
     </title>
-    <style>
-      body {
-        background: url(Theyous.GitHub.IO/Imagens/BGs/0001.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-    </style>
+    <style type="text/css">
+      <!--
+        body{
+          background: url(images/<?php echo $selectedBg; ?>) no-repeat;
+        }
+      -->
+</style>
   </head>
   <body>
   </body>
